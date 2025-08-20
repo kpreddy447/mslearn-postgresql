@@ -79,7 +79,7 @@ resource allowAll 'Microsoft.DBforPostgreSQL/flexibleServers/firewallRules@2023-
 }
 
 @description('Creates the "customer_support_tickets" database in the PostgreSQL Flexible Server.')
-resource customer_support_tickets Database 'Microsoft.DBforPostgreSQL/flexibleServers/databases@2023-03-01-preview' = {
+resource customer_support_tickets 'Microsoft.DBforPostgreSQL/flexibleServers/databases@2023-03-01-preview' = {
   name: 'customer_support_tickets'
   parent: postgreSQLFlexibleServer
   properties: {
